@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Neue", cursive ;
+    /* background-color: teal; */
+}
+
+h1 {
+    font-weight: 700;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background: #E3E6F3;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.action-icons ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.action-icons li {
+    display: block;
+    padding: 0 20px;
+}
+
+ 
+/* Hero Section */
+
+#hero {
+    background-image: url("images/hero.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding-left: 50px;
+    position: absolute;
+    top: 70%;
+    bottom: 20%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    font-weight: 900;
+    color: #E3E6F3;
+}
+
+.hero-content h3 {
+    padding-bottom: 5px;
+}
+
+
+/* Features Section */
+
+#shop-by-category h2 {
+    font-size: 40px;
+    margin: 20px 0px 0px 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.categories-div {
+    display: flex;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category img {
+    height: 300px;
+    padding: 20px;
+}
+
+.category a {
+    text-align: center;
+}
+
+
+/* CTA Banners Styles */
+
+.cta-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;    
+}
+
+.cta-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    height: auto;
+}
+
+.cta-banner {
+    flex: 1;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    /* padding: 2rem; */
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 31.25rem;
+    background-color: pink;
+}
+
+.cta-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* background-color: green; */
+}
+
+.cta-banner h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.cta-banner p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+} 
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .cta-flex-container {
+        flex-direction: column;
+    }
+}
+
+
+/* .cta-carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+.carousel-item {
+    flex: 0 0 100%;
+    position: relative;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.cta-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+} */
